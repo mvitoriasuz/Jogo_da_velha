@@ -5,130 +5,130 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B3E7FB"
+    android:background="#F0F8FF"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogo da Velha"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#0077B6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Vez do jogador X"
+        android:textColor="#023E8A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="1dp"
-        android:gravity="center"
+        android:layout_width="366dp"
+        android:layout_height="305dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/border"
+        android:stretchColumns="*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@id/status"
+        app:layout_constraintVertical_bias="0.385">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+        <TableRow android:gravity="center">
 
             <Button
                 android:id="@+id/button1"
+                style="@style/TicTacToeButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
-                android:layout_marginRight="3pt"
                 android:onClick="btClick"
-                android:textColorLink="#FFFFFF"
-                app:cornerRadius="0pt"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button2"
+                style="@style/TicTacToeButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
-                android:layout_marginRight="3pt"
                 android:onClick="btClick"
-                android:textColorLink="#FFFFFF"
-                app:cornerRadius="0pt"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button3"
+                style="@style/TicTacToeButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
-                android:layout_marginRight="3pt"
                 android:onClick="btClick"
-                android:textColorLink="#FFFFFF"
-                app:cornerRadius="0pt"
                 tools:ignore="SpeakableTextPresentCheck" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+        <!-- Linha 2 -->
+        <TableRow android:gravity="center">
 
             <Button
                 android:id="@+id/button4"
+                style="@style/TicTacToeButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
-                android:layout_marginRight="3pt"
                 android:onClick="btClick"
-                android:textColorLink="#FFFFFF"
-                app:cornerRadius="0pt"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button5"
+                style="@style/TicTacToeButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
-                android:layout_marginRight="3pt"
                 android:onClick="btClick"
-                android:textColorLink="#FFFFFF"
-                app:cornerRadius="0pt"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button6"
+                style="@style/TicTacToeButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
-                android:layout_marginRight="3pt"
                 android:onClick="btClick"
-                android:textColorLink="#FFFFFF"
-                app:cornerRadius="0pt"
                 tools:ignore="SpeakableTextPresentCheck" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+        <!-- Linha 3 -->
+        <TableRow android:gravity="center">
 
             <Button
                 android:id="@+id/button7"
+                style="@style/TicTacToeButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
-                android:layout_marginRight="3pt"
                 android:onClick="btClick"
-                android:textColorLink="#FFFFFF"
-                app:cornerRadius="0pt"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button8"
+                style="@style/TicTacToeButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
-                android:layout_marginRight="3pt"
                 android:onClick="btClick"
-                android:textColorLink="#FFFFFF"
-                app:cornerRadius="0pt"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button9"
+                style="@style/TicTacToeButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
-                android:layout_marginRight="3pt"
                 android:onClick="btClick"
-                android:textColorLink="#FFFFFF"
-                app:cornerRadius="0pt"
                 tools:ignore="SpeakableTextPresentCheck" />
         </TableRow>
-
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
